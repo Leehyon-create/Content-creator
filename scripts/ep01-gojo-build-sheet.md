@@ -104,11 +104,49 @@ the edit. That's what makes 4 episodes a week possible.
 
 ---
 
+## Animated clips
+
+Likeness approved by the creator on the blindfold shots and on shot 7.
+All clips: Seedance 2.0, 5s, 1080p, `mode=std`, silent (`generate_audio=false`) —
+VO and music are laid over them in the edit.
+
+| # | Video job ID | From still | Motion |
+|---|---|---|---|
+| 20 | `18252e50-522e-4acf-bea8-afc86c4bcc56` | 0 | Slow push-in, hair drift, haze |
+| 21 | `25721b12-39cc-43ac-81fc-f8177b4f475f` | 2 | Energy tendrils coiling in place |
+| 22 | `243cadeb-0e0b-4eda-ba54-28697bacd9f7` | 3 | Push-in, shadow grows on the wall |
+| 23 | `26d642ee-9dba-4d9a-a4b7-21491c0fe996` | 4 | Head settle, hair drift, near-static |
+| 24 | `17b9b560-d3a4-46c0-bdb0-39b5828dc7e5` | 5 | Push-in, energy rises at shoulders |
+| 25 | `8bb4442f-a12b-460d-9872-eb3c5e4192a7` | 7 | One slow blink, faint breathing |
+
+Every prompt specifies **mouth closed, no talking** — the clips must never appear to
+speak, because the VO is separate and any lip movement reads as broken sync.
+
+**Alternate bare-face stills** (generated before the creator confirmed shot 7 was fine;
+kept as options): `aeab8838-6f64-4823-8349-8049d021233d` (Nano Banana, neutral),
+`8591cae6-f550-46d0-8ce9-4e932b534053` (Seedream 4.5, neutral),
+`722491e8-0e01-4ad8-8caf-63731184eb7f` (Nano Banana, slight smile).
+
+### Corrected costs
+
+Earlier estimates were wrong and are superseded. Measured on this account:
+
+| Job | Credits |
+|---|---|
+| Image, 2 variants, 2K | ~1.5 |
+| Video, 5s, 1080p, Seedance 2.0 std | **45** |
+| Video, 5s, 720p, Seedance 2.0 fast | **17.5** |
+| Video, 5s, Seedance 2.5 (text-to-video only) | 32.5 |
+
+The 90–330 figures in the account's older transaction history were longer or
+higher-tier jobs, not the per-clip rate for this workflow. **Ep.1 total: ~278 credits**
+(8 stills + 3 alternates + 6 clips).
+
+**Seedance 2.5 will not accept a start image** — it is text-to-video only and returns a
+422. Use `seedance_2_0` for image-to-video; it declares `start_image` and `end_image`.
+
 ## Outstanding
 
-- **Likeness check.** I generate blind — the result CDN is blocked from my session, so
-  I cannot see these images. Confirm shots 0/1 read as you before anything is animated.
-- **Animation.** Optional. At 90–330 credits per clip, animate only shots 0 and 5 and
-  leave the rest as stills with push-ins — that reads fine at this cut rhythm and saves
-  roughly 600 credits. Budget after the stills: ~1,062.
-- **Voice clone.** Not started. Do it before Ep.2 so the series is consistent from early on.
+- **Voice clone.** Not started. Do it before Ep.2 so the series is consistent early.
+- **Assembly.** Must be done in DaVinci — the result CDN is blocked from the agent
+  session, so clips cannot be pulled down and cut here.
