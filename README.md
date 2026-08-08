@@ -11,5 +11,10 @@ cd Content-creator
 
 ## Repository layout
 
-Nothing beyond the initial scaffolding so far. Add project files, then update
-this README with build, run, and test instructions.
+```
+scripts/
+  king-chris-channel-analysis.md      Format breakdown of @itsKingChris:
+                                      content pillars, hook taxonomy, edit signature
+  script-01-the-manga-was-better.md   Production-ready 0:38 vertical Short built
+                                      on that format, with alt hooks and a series plan
+```
