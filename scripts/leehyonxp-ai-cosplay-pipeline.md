@@ -20,6 +20,47 @@ tells you exactly which shots survive it and which don't.
 
 ---
 
+## 0.5 The Gojo test footage changes the plan — for the better
+
+**What it shows:** 6.5s, 1080×1920, 30fps, handheld selfie. Real white wig, real
+blindfold, black high-collar shirt. This is **practical cosplay, not AI** — and it
+reads well. The wig silhouette is right, the blindfold sits correctly.
+
+**The reframe:** you can already physically cosplay. That beats AI for hero shots,
+every time, and it's why the pink-hair reference you sent works — the face underneath
+is real. So AI's job shrinks to what you *can't* buy or build:
+
+| Job | Do it |
+|---|---|
+| Costumes you already own (Gojo) | **Practically.** Wear it. Film it. |
+| Backgrounds / environments | **AI.** Your room is the weak link, not your costume. |
+| Effects — Infinity, Domain Expansion, cursed energy | **AI / compositing.** |
+| Costumes you don't own | **AI**, using your Soul. |
+
+**The blindfold is a bigger gift than you realise.** It removes the two hardest
+problems in this entire pipeline at once: no eyes to keep consistent, and no lip-sync
+tell, because performance moves to the mouth and jaw. Gojo's whole persona is a smirk.
+You can carry an episode on the lower half of your face alone.
+
+**Five fixes on that footage, all free:**
+
+1. **Camera is too low.** You're shooting up into the ceiling — that's the single
+   biggest thing making it read as a casual selfie instead of a production. Phone at
+   eye level or slightly above, and prop it so it stops drifting.
+2. **The room is killing it.** Visible ceiling, doorway, clutter on the left. Shoot
+   against your cleanest wall, or push in tighter so the background is just wall.
+3. **No key light.** Ambient room light is flat and Gojo is a high-contrast character.
+   One lamp off to the side at 45° costs nothing and does more than any AI pass.
+4. **Audio is ~20 dB too quiet** (peak −21.7 dBFS, mean −35.7). This is unusable as
+   sync sound — it's the phone mic picking up a room. Record voiceover separately,
+   close to the mic, and lay it over. Which is what the format wants anyway.
+5. **6.5s is a fragment, not a shot.** Roll 30–40s per setup and cut the best 3.
+
+Do those five and the same costume, in the same room, produces something that looks
+like a channel instead of a test.
+
+---
+
 ## 1. Lock your identity first (do this before anything else)
 
 Everything downstream depends on one reusable, identity-faithful reference of your
@@ -54,6 +95,12 @@ what he actually does anyway.
 - Varied backgrounds and lighting; same face, different days
 - **No** sunglasses, no heavy filters, no group photos, nothing blurry, no existing
   AI images of yourself
+
+**The Gojo footage cannot train the Soul**, and it's worth being clear why: the
+blindfold covers your eyes and the wig covers your hairline. Eyes are the single
+strongest identity signal a model has to learn from. Train on covered eyes and you get
+a Soul that only knows the bottom half of your face. The training set has to be
+bare-faced, dry-haired, and unobstructed — the cosplay comes later, at generation time.
 
 Send those and I'll run the training.
 
