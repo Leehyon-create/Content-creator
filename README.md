@@ -23,10 +23,18 @@ scripts/
   leehyonxp-batch-01-would-you-survive.md
                                       7 faceless scripts: flagship series Ep.1-4
                                       plus 3 supporting posts, one batch session
+  leehyonxp-ai-cosplay-pipeline.md    AI cosplay production pipeline using the
+                                      creator's own face: identity locking, model
+                                      routing, AI shot constraints, disclosure,
+                                      and the cosplay version of the flagship series
 ```
 
 ## Working assumptions
 
-The LeehyonXP docs assume a faceless workflow (AI anime visuals + burned-in captions
-+ voiceover) and a unified "power systems, ranked" lane across all three platforms.
-Revisit both if the channel direction changes.
+The LeehyonXP docs assume a unified "power systems, ranked" lane across TikTok,
+Instagram Reels and YouTube Shorts.
+
+Production mode is mid-migration: `leehyonxp-batch-01` was written faceless, and
+`leehyonxp-ai-cosplay-pipeline.md` supersedes its episode structure with an AI
+cosplay format built on the creator's own face. Section 7 of the pipeline doc is
+the current shape of the flagship series.
