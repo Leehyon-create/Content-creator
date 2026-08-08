@@ -153,12 +153,45 @@ characters — don't generate your face onto a real person, or a real person's o
 
 ---
 
-## 7. Current status
+## 7. Working configuration
 
-- ✅ 16 training photos uploaded to Higgsfield
-- ⛔ Soul training failing via MCP — generic error, three attempts, two argument shapes,
-  two image counts. Reads work, so it isn't the photo set. Train in the Higgsfield web
-  app instead; it returns a real error message. Balance was 68 credits on Plus, which
-  should cover a training run, so credits are suspected but unconfirmed.
-- ⬜ Voice clone — not started, do it alongside the Soul
-- ⬜ Ep.1 (Gojo) — blocked on the Soul
+**Identity: Element (not Soul).**
+
+```
+Element name : LeehyonXP
+Element ID   : f7a91fd2-9e23-4b03-8436-3e458e17618e
+References   : 5 studio daylight portraits (front / three-quarter / profile)
+Usage        : embed <<<f7a91fd2-9e23-4b03-8436-3e458e17618e>>> in the prompt
+Models       : nano_banana_2, seedream_v4_5, cinematic_studio_2_5,
+               seedance_2, kling_3 (NOT soul_2 / soul_cinema_studio)
+```
+
+**Costs measured on this account:**
+
+| Job | Credits |
+|---|---|
+| Image, 2 variants, 2K, Nano Banana | ~1.5 |
+| Video (Seedance 2.0), per generation | 90–330 |
+
+Images are effectively free; **video is the entire budget.** Generate stills
+generously, approve them, and only then animate — an approved still costs 0.75 credits
+to replace, an unapproved animation costs up to 330.
+
+**Soul training is broken via MCP.** Seven attempts, generic error every time,
+independent of image count (10 / 16 / 20) and of balance (68 and 1,068 credits).
+Nothing was ever charged. Both the count and the credit theories were tested and
+disproved. Retry the Soul later in the web app; the Element carries production
+in the meantime.
+
+**Known limitation:** the Higgsfield result CDNs are blocked by this session's egress
+policy, so generated images cannot be reviewed from here. The creator must approve
+likeness on every hero still before it is animated.
+
+## 8. Status
+
+- ✅ 22 reference photos uploaded
+- ✅ Element `LeehyonXP` created
+- ✅ Ep.1 cold-open hero still — 2 variants generated, awaiting likeness approval
+- ⬜ Ep.1 remaining shots — pending hero approval
+- ⬜ Voice clone
+- ⛔ Soul training — blocked, see above
